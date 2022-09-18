@@ -1,0 +1,109 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+    box-sizing: border-box;
+  
+}
+.menu{
+    margin: 0%;
+ 
+    background-color: #3e8e41;
+    
+    
+ }
+ .parent{
+  display: inline;
+  width: 100%;
+  
+ }
+
+ .imgs{
+ float: left;
+ width: 20%;
+
+ overflow: hidden;
+
+  
+ }
+
+ .text{
+margin-top: 10%;
+
+
+  width: 75%;
+  float: right;
+ }
+
+/* 
+
+.menu-item li{
+    margin-right:   6%;
+    display: inline-block;
+   
+    
+    
+}
+
+
+
+
+
+
+.movies{
+position: relative;  
+}
+
+.movies_info{
+    display: none;
+  position: absolute;
+  min-width: 200%;
+  z-index: 1;
+}
+
+.movies_info a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .movies_info a:hover {background-color: #ddd;}
+
+
+  .movies:hover .movies_info  {display: block;
+    background-color: #3e8e41;
+}
+
+
+
+.Actors{
+    position: relative;  
+    }
+    
+    .Actor_info{
+        display: none;
+      position: absolute;
+      min-width: 200%;
+      z-index: 1;
+    }
+    
+    .Actor_info a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .Actor_info a:hover {background-color: #ddd;}
+    
+    
+      .Actors:hover .Actor_info  {display: block;
+        background-color: #3e8e41;
+    } 
+    
+   .Amazon{
+    margin-top: 20px;
+    height: 500px;
+    width: 100%;
+    border: 1px solid black;
+    background:bisque;
+  
+}  */

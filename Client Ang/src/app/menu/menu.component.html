@@ -1,0 +1,104 @@
+<div class="menu">
+        
+        <!-- <ul class="menu-item">
+            
+            <li ><a href="#"><button><u>Home</u></button></a></li>
+
+            <li class="movies">
+            <button class = dropdown><u>Movies</u> </button>
+            <div class = "movies_info">
+            <a routerLink="/movies">All Movies</a>
+            <a href="#">Add Movie</a>
+            <a href="#">Link Movie</a>
+            <a href="#">Cast and Crew</a>
+            </div>
+            </li>
+
+            <li class="Actors">
+                <button class = dropdown><u>Actors</u></button>
+                <div class = "Actor_info">
+                <a href="#">All Actors</a>
+                <a href="#">Add Actor</a>
+                <a href="#">Link Actor</a>
+                <a href="#">Actor's Movies</a>
+                </div>
+                </li>
+
+               
+                <li ><a href="#"><button><u>Sign-In</u></button></a></li>
+             
+                <li ><a href="#"><button><u>Register</u></button></a></li>
+            
+                    
+                    <input type="text" placeholder="Search by movie or actor">
+                    <button ><u>Search</u></button>
+             
+
+                
+                  
+                </ul>  -->
+
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" routerLink="/home">Home</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <!-- <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Movies <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-reels" viewBox="0 0 16 16">
+                                <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/>
+                                <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7zm6 8.73V7.27l-3.5 1.555v4.35l3.5 1.556zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"/>
+                                <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                              </svg>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                
+                              <a class="dropdown-item" routerLink="/movies">All Movies</a>
+                              <a class="dropdown-item" routerLink="/PostMovie">Add Movie</a>
+                              <a class="dropdown-item" href="#">All Movies Cast</a>
+                              <a class="dropdown-item" href="#">Link Movie</a>
+
+                            </div>
+                          </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Actors <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                              </svg>
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item"routerLink="/actors">All Actors</a>
+                            <a class="dropdown-item" routerLink="/Postactors">Add Actor</a>
+                            <a class="dropdown-item" href="#">Link Actor</a>
+                            <a class="dropdown-item" href="#">Actor's Movies</a>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link " routerLink="/login">Log-In</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " routerLink="/register">Register</a>
+                          </li>
+                      </ul>
+                      <form (ngSubmit) = "GetMovieByTitle()"  class="form-inline my-2 my-lg-0">
+                        <input [(ngModel)] = "name" type="text"  id = "title" name ="name" class="form-control mr-sm-2"  placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" routerLink="/movies/{{movie.id}}" type="submit">Search</button>
+            
+                      </form>
+                     
+                    </div>
+                  </nav>
+             
+</div>
+
+    <!-- have a for loop always for array , so you do not need three dives *ngFOr = -->
+    <!-- <div class="menu-item">{{categories[0]}}</div>
+    <div class="menu-item">{{categories[1]}}</div>
+    <div class="menu-item">{{categories[2]}}</div> -->
